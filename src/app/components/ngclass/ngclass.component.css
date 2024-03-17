@@ -1,0 +1,11 @@
+.primary{
+    color:red;
+    background-color:aquamarine;
+
+}
+.big{
+    font-size: 40px;
+    text-align: center;
+}
+
+/* ngstyle is useed to change the multiple style properties of our HTML elemets */

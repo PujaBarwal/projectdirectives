@@ -1,0 +1,42 @@
+<p>ngif works!</p>
+<div class="container">
+    <div *ngIf="active">
+        <h4>show this content when active is true</h4>
+    </div>
+
+</div>
+<div class="container">
+    <div *ngIf="count>2">
+        <h4>count is greater than 2 i.e{{count}}</h4>
+    </div>
+
+</div>
+<div class="container">
+    <input type="checkbox"(change)="changeState()">
+    <p *ngIf="active">
+      This block is active block.
+    </p>
+
+</div>
+<h4>ng-if-else</h4>
+<select [(ngModel)]="count" name="count">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+</select>
+{{count}}
+
+<div class="container">
+    <div *ngIf="count>2; else elseblock">
+        <h3>count is greater than 2 i.e {{count}}</h3>
+    </div>
+    <div>
+        <ng-template #elseblock>
+            <h4>count is not greater than 2 i.e {{count}}</h4>
+        </ng-template>
+    </div>
+</div>
+
+
+

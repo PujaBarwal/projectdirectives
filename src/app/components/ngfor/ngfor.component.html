@@ -1,0 +1,21 @@
+<p>ngfor works!</p>
+<div class="container">
+    <h2>ngfor learning</h2>
+    <ol>
+    <li *ngFor="let c of city">{{c}}</li>
+    </ol>
+    <div *ngFor="let c of city;let i=index;">
+    <h3>{{i+1}} {{c}}</h3>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Movies Information</h1>
+    <div *ngFor="let m of movies;let i=index;">
+        <h4>{{i+1}} {{m.title}}</h4>
+        <h4>{{m.director}}</h4>
+        <h4>{{m.cast}}</h4>
+        <h4>{{m.releasedate}}</h4>
+    </div>
+</div>
+    
